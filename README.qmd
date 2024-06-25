@@ -1,0 +1,75 @@
+---
+title: "Stroke Prediction"
+author: "Michal Rackieqicz"
+format: gfm
+editor: visual
+---
+
+# About Data Analysis Report
+
+This RMarkdown file contains the report of the data analysis done for the project on building and deploying a stroke prediction model in R. It contains analysis such as data exploration, summary statistics and building the prediction models. The final report was completed on `r date()`. 
+
+**Data Description:**
+
+According to the World Health Organization (WHO) stroke is the 2nd leading cause of death globally, responsible for approximately 11% of total deaths.
+
+This data set is used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. Each row in the data provides relevant information about the patient.
+
+
+# Data preprocessing
+
+## Load data and packages
+
+```{r packages}
+#| message: false
+library(GGally)
+library(ggExtra)
+library(skimr)
+library(tidymodels)
+library(tidyverse)
+```
+
+```{r data}
+#| message: false
+stroke <- readr::read_csv("data-raw/healthcare-dataset-stroke-data.csv")
+```
+
+## EDA
+
+```{r}
+skim(stroke)
+```
+
+```{r}
+
+```
+
+### Findings and Summary
+
+# Build prediction models
+
+```{r}
+
+```
+
+
+
+
+# Model evaluation and selection
+
+```{r}
+
+```
+
+
+
+# Model deployment
+
+```{r}
+
+```
+
+
+
+
+# Findings and Conclusions
